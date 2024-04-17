@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Third Places</title>
+  <link rel="icon"
+    href="https://cms-assets.tutsplus.com/cdn-cgi/image/width=1200/uploads/users/358/posts/23828/final_image/00-final-product.png">
+</head>
+<!---->
+<link href="index.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="petition.css" rel="stylesheet" type="text/css" />
+<link href="petition.js" rel="stylesheet" type="text/css" />
+<link href="reset-webview.css" rel="stylesheet" type="text/css" />
+</head>
+<!---->
+
+<body>
+  <div class=navBar>
+    <div id=headerLeft>
+      <div id=logo id=coffeeHead>
+        <p> <a href="index.html" style="text-decoration:none;"> <img src=coffeepix.png width="100" height="80">
+        </p>
+        <p style="color: #FFBE98;"> <a href="index.html" style="text-decoration:none;"> Place3 </p>
+      </div>
+      <div class=headerLink>
+        <p> <a href="index.html" style="text-decoration:none;"> HOME </a> </p>
+        <p> <a href="#ABOUT" style="text-decoration:none;"> ABOUT </a> </p>
+        <p> <a href="#DISCOVER" style="text-decoration:none;"> DISCOVER </a> </p>
+        <p> <a href="Petition.html" style="text-decoration:none;"> SIGN OUR PETITION </a> </p>
+      </div>
+    </div>
+    <div id=headerRight>
+      <img src=moon.png id=icon>
+    </div>
+  </div>
+</body>
+
+<script>
+  var dark = document.getElementById("dark");
+
+  dark.onclick = function () {
+    document.body.classList.toggle("dark-theme");
+
+    if (documnet.body.classList.contains("dark-theme")) {
+      icon.src = "sun.jpg";
+
+    } else {
+      icon.src = "moon.png";
+
+    }
+  }
+</script>
+
+
+<!--000000000000000000PETITION DOWN HERE00000000000000000000000000000-->
+
+
+
+<body>
+  <div class="petition" id="petition">
+ 
+    <h2>Sign Our Petition 📢</h2>
+  
+    <div class="petition-container">
+      
+      <div class="petition-para">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
+        enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+        qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+        
+      </div>
+
+      <div id="signatures">
+        <p>🖊️ Pam from Bartow  supports this.</p>
+        <p>🖊️ Sam from Forsyth  supports this.</p>
+        <p>🖊️ Kam from Cobb  supports this.</p>
+      </div>
+        
+      </div>
+
+    
+
+    <!--- Sign Petition Form --->
+    <form id="sign-petition" title="sign-petition">      
+      <p>
+        Name:
+      </p>
+      <input type="text" id="name" placeholder="Enter Your Name">
+      <p> 
+        Hometown:
+      </p>
+      <input type="text" id="hometown" placeholder="Enter Your Hometown">
+      <p>
+        Email:
+      </p>
+      <input type="text" id="email" placeholder="Enter Your Email">
+      
+      <button id=sign-now-button> Sign Now </button>
+    </form>
+      
+      <!--- Sign Now Button --->
+ 
+  
+  </div>
+  
+</body>
+  
+  <script src="Petition.js"></script>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+  <link href="Petition.js" rel="stylesheet" type="text/css" />
+</head>
+<!--Add form elements here -->
+
+<script>
+  var icon = document.getElementById("icon");
+
+  icon.onclick = function () {
+    document.body.classList.toggle("dark-theme");
+    if (document.body.classList.contains("dark-theme")) {
+      icon.src = "SUN-512.webp";
+    } else {
+      icon.src = "moon.png";
+    }
+  }
+</script>
+
+</html>

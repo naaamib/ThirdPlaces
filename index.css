@@ -1,0 +1,311 @@
+html {
+  height: 100%;
+  width: 100%;
+  overf;
+  }
+
+
+
+body {
+  background-color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #ffbe98;
+  --seconday-color: black;
+  --jimmy-color: #567c57;
+  --fiona-color: #ffbe99
+  --debby-color: hotpink
+}
+
+.dark-theme {
+  --primary-color: black;
+  --seconday-color: lavender;
+  --jimmy-color: #323c2a;
+  --fiona-color: #851cab;
+  
+}
+
+@font-face {
+  font-family: Courier;
+  src: url('Courier.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Anta;
+  src: url('Anta-Regular.ttf') format('truetype');
+}
+
+a:link {
+  color: var(--fiona-color)
+}
+
+a:visited {
+  color: #a9bda0
+}
+
+a:hover {
+  color: #d24d29
+}
+
+a:active {
+  color: red
+}
+
+.headerLink {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: var(--debby-color);
+  
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: var(--jimmy-color);
+  gap: 500px;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  font-family: courier;
+}
+
+#headerLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+#headerRight{
+  justify-content: flex-end;
+}
+
+#icon {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+  width: 30px;
+  cursor: pointer;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  font-family: anta;
+  font-size: 200%;
+  justify-content: flex-start;
+}
+
+.Title {
+  text-align: center;
+  font-family: courier;
+}
+
+.Tragedy {
+  text-align: center;
+  font-family: courier;
+}
+
+.BigCoffeeShop {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.oneFlex {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: stretch;
+  margin: 20px;
+}
+
+.COLUMONE{
+  display: flex;
+  flex-direction: column;
+  gap: 40px; 
+  padding-left: 20px;
+  padding-right: 150px;
+  font-size: 12px;
+}
+.COLUMTWO{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-left: 0px;
+  padding-right: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
+ 
+}
+
+.COLOMTHREE{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-left: px;
+  padding-right: 0px;
+  font-size: 12px;
+}
+
+.ArticlesCard{
+  border: 3px solid #592a03;
+  padding-inline: 0px;
+  padding-block: 0px;
+  padding-bottom: 20px;
+  margin: 0px;
+  border-radius: 0%;
+  background-color: var(--primary-color);
+  width: 200%;
+  font-family: courier;
+}
+
+#ArticleHeader {
+  padding-inline: 0px;
+  padding-block: 0px;
+  padding-bottom: 20px;
+  margin: 0px;
+  border-radius: 1%;
+  background-color: var(--jimmy-color);
+  color: var(--seconday-color);
+  font-size: 18px;
+  border-bottom: solid #592a03;
+}
+
+.ArticlesCard1{
+  border: 3px solid #592a03;
+  padding-inline: 0px;
+  padding-block: 0px;
+  padding-bottom: 20px;
+  margin: 0px;
+  border-radius: 0%;
+  background-color: var(--primary-color);
+  width: 200%;
+  font-family: courier;
+  }
+
+#ArticleHeader1 {
+  padding-inline: 0px;
+  padding-block: 0px;
+  padding-bottom: 20px;
+  margin: 0px;
+  border-radius: 1%;
+  background-color: var(--jimmy-color);
+  color: var(--seconday-color);
+  font-size: 16px;
+  border-bottom: solid #592a03;
+}
+
+#ArticleLinks1{
+  margin: 20px;
+}
+
+.DefinitionCard {
+  display: block;
+  border: 3px solid #592a03;
+  padding-inline: 0px;
+  padding-block: 0px;
+  padding-bottom: 20px;
+  margin: 0px;
+  border-radius: 0%;
+  background-color: var(--primary-color);
+  width: 100%;
+  font-size: 12px;
+  flex-direction: column;
+  font-family: courier;
+   /* justify-content: flex-end;
+  border: 3px solid #592a03;
+  padding-inline: 0px;
+  padding-block: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  border-radius: 1%;
+  width: 100%; */
+  
+}
+
+#Question {
+  text-align: start;
+  background-color: var(--jimmy-color);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-inline: 0px;
+  padding-block: 0px;
+  padding-bottom: 0px;
+  border-radius: 0%;
+  border-bottom: solid #592a03;
+}
+
+#DefinitionText {
+  font-size: 12px;
+  text-align: justify;
+  padding-bottom: 0px;
+  margin: 3%;
+}
+
+
+.VideoCard {
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 3px solid #592a03;
+  padding-inline: 0px;
+  padding-block: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  border-radius: 1%;
+  width: 100%;
+  font-family: courier;
+}
+
+#VideoTitle {
+  background-color: var(--jimmy-color);
+  flex-direction: column;
+  border-bottom: solid #592a03;
+  padding-inline: 0px;
+  padding-block: 0px;
+  padding-bottom: 20px;
+  margin: 0px;
+  border-radius: 1%;
+  
+}
+
+#Video1 {
+  margin: 5px;
+}
+
+.Places {
+  display: flex;
+  color: #d24d29;
+  font-family: Anta;
+}
+
+.ThreePlaces {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.PlaceDef {
+  display: flex;
+  font-size: 20px;
+  justify-content: space-evenly;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
