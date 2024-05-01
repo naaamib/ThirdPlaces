@@ -21,7 +21,7 @@ body {
 .petition{
   margin: 20px;
   font-family: Courier;
-  color: #323c2a;
+  color: var(--frank-color);
 }
 .petition-container {
   display: flex;
@@ -30,13 +30,13 @@ body {
   width: 100%;
   padding-bottom: 50px;
   font-family: Courier;
-  color: #323c2a;
+  color: var(--frank-color);
 }
 .petition-para{
   font-family: Courier;
   width: 55%;
   padding-right: 10px;
-  color: #323c2a;
+  color: var(--frank-color);
   
 }
 
@@ -71,7 +71,7 @@ body {
 /* box that contains all the content and images */
 .modal-content {
   background-color: lightsteelblue; /* update the colors and font sizes as you like */
-  color: #323c2a;
+  color: var(--liam-color);
   text-align: center;
   font-size: 3rem;
   display: flex; /* adds flexbox to center all items */

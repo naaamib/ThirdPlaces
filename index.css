@@ -19,6 +19,8 @@ body {
   --fiona-color: #ffbe99;
   --debby-color: hotpink;
   --lip-color: #323c2a;
+  --frank-color: #323c2a;
+  --liam-color: lavender;
 }
 
 .dark-theme {
@@ -27,7 +29,7 @@ body {
   --jimmy-color: #323c2a;
   --fiona-color: #851cab;
   --lip-color: #567c57; 
-  
+  --frank-color: #567c57;
 }
 
 @font-face {
