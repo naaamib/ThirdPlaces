@@ -16,8 +16,9 @@ body {
   --primary-color: #ffbe98;
   --seconday-color: black;
   --jimmy-color: #567c57;
-  --fiona-color: #ffbe99
-  --debby-color: hotpink
+  --fiona-color: #ffbe99;
+  --debby-color: hotpink;
+  --lip-color: #323c2a;
 }
 
 .dark-theme {
@@ -25,6 +26,7 @@ body {
   --seconday-color: lavender;
   --jimmy-color: #323c2a;
   --fiona-color: #851cab;
+  --lip-color: #567c57; 
   
 }
 
@@ -38,8 +40,13 @@ body {
   src: url('Anta-Regular.ttf') format('truetype');
 }
 
-a:link {
-  color: var(--fiona-color)
+:link {
+  color: var(--fiona-color);
+  
+}
+
+.Article-Links{
+  color: var(--lip-color);
 }
 
 a:visited {
@@ -75,6 +82,16 @@ a:active {
   font-family: courier;
 }
 
+.navbaritems{
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+.BigCoffeeShop:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
 #headerLeft {
   display: flex;
   flex-direction: row;
@@ -83,7 +100,7 @@ a:active {
 }
 
 #headerRight{
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 #icon {
@@ -122,7 +139,7 @@ a:active {
 
 .oneFlex {
   display: flex;
-  gap: 40px;
+  gap: 10px;
   justify-content: center;
   align-items: stretch;
   margin: 20px;
@@ -131,27 +148,28 @@ a:active {
 .COLUMONE{
   display: flex;
   flex-direction: column;
-  gap: 40px; 
-  padding-left: 20px;
-  padding-right: 150px;
+  gap: 30px; 
+  padding-left: 0px;
+  padding-right: 100px;
   font-size: 12px;
 }
 .COLUMTWO{
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  padding-left: 0px;
-  padding-right: 150px;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 100px;
+  padding-right:50px;
+  margin-left: 0px;
+  margin-right: 0px;
+  gap: 30px;
  
 }
 
 .COLOMTHREE{
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  padding-left: px;
+  align-items: center;
+  gap: 30px;
+  padding-left:0px;
   padding-right: 0px;
   font-size: 12px;
 }
@@ -163,7 +181,7 @@ a:active {
   padding-bottom: 20px;
   margin: 0px;
   border-radius: 0%;
-  background-color: var(--primary-color);
+  background-color: var(--jimmy-color);
   width: 200%;
   font-family: courier;
 }
@@ -176,7 +194,8 @@ a:active {
   border-radius: 1%;
   background-color: var(--jimmy-color);
   color: var(--seconday-color);
-  font-size: 18px;
+  font-size: 18px;}
+.Bord{
   border-bottom: solid #592a03;
 }
 
@@ -206,6 +225,7 @@ a:active {
 
 #ArticleLinks1{
   margin: 20px;
+
 }
 
 .DefinitionCard {
@@ -221,15 +241,7 @@ a:active {
   font-size: 12px;
   flex-direction: column;
   font-family: courier;
-   /* justify-content: flex-end;
-  border: 3px solid #592a03;
-  padding-inline: 0px;
-  padding-block: 0px;
-  padding-bottom: 0px;
-  margin: 0px;
-  border-radius: 1%;
-  width: 100%; */
-  
+   
 }
 
 #Question {
@@ -286,14 +298,16 @@ a:active {
 
 .Places {
   display: flex;
-  color: #d24d29;
+  color: var(--jimmy-color);
   font-family: Anta;
 }
 
 .ThreePlaces {
+  margin: 30px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  transition: transform 0.5s ease;
 }
 
 .PlaceDef {
@@ -308,4 +322,29 @@ a:active {
 *::after {
   box-sizing: border-box;
 }
+
+.revealable{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+ 
+}
+
+.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+.fp:hover{
+  transform: scale(1.05);
+}
+
+.sp:hover{
+  transform: scale(1.05);
+}
+
+.tp:hover{
+  transform: scale(1.05);
+}
+
 

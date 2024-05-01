@@ -18,6 +18,7 @@
 
 <body>
   <div class=navBar>
+    <div class=navbaritems>
     <div id=headerLeft>
       <div id=logo id=coffeeHead>
         <p> <a href="index.html" style="text-decoration:none;"> <img src=coffeepix.png width="100" height="80">
@@ -29,11 +30,14 @@
         <p> <a href="#ABOUT" style="text-decoration:none;"> ABOUT </a> </p>
         <p> <a href="#DISCOVER" style="text-decoration:none;"> DISCOVER </a> </p>
         <p> <a href="Petition.html" style="text-decoration:none;"> SIGN OUR PETITION </a> </p>
+        <button id=reduceMotion> Reduce Motion  </button>
+        <img src=moon.png id=icon>
       </div>
     </div>
     <div id=headerRight>
       <img src=moon.png id=icon>
     </div>
+    </div>   
   </div>
 </body>
 
@@ -44,7 +48,7 @@
 <body>
   <h1>
     <p class="Title" style="color: #323c2a;">
-      You'll never reach first place withhout a ME BITCH
+      You'll never reach first place withhout a "Third Place"
     </p>
   </h1>
 
@@ -54,20 +58,41 @@
   </h2>
 
   <div class=BigCoffeeShop id=HOME>
+    <style>    
+    @keyframes shake {
+      0% { transform: translate(1px, 1px) rotate(0deg); }
+      10% { transform: translate(-1px, -2px) rotate(-1deg); }
+      20% { transform: translate(-3px, 0px) rotate(1deg); }
+      30% { transform: translate(3px, 2px) rotate(0deg); }
+      40% { transform: translate(1px, -1px) rotate(1deg); }
+      50% { transform: translate(-1px, 2px) rotate(-1deg); }
+      60% { transform: translate(-3px, 1px) rotate(0deg); }
+      70% { transform: translate(3px, 1px) rotate(-1deg); }
+      80% { transform: translate(-1px, -1px) rotate(1deg); }
+      90% { transform: translate(1px, 2px) rotate(0deg); }
+      100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+    </style>
     <img src="coffeepix.png" width="500" height="300">
   </div>
 
-  <div class=oneFlex>
 
-    <div class=COLUMONE>
-      <div class=ArticlesCard>
+
+
+  
+  
+
+  <div class="oneFlex revealable">
+
+    <div class=COLUMONE id=DISCOVER>
+      <div class="ArticlesCard revealable">
 
         <h1 id="ArticleHeader" style="color: #a9bda0;""> Learn more about third places, and how its disapearance is affecting us: </h1>
 
-    <p id=" ArticleLinks">
+    <p id="ArticleLinks" class="Article-Links" >
 
           <a href="https://www.jordanharbinger.com/why-you-need-a-third-place-and-how-to-find-one/">
-            <li>JordanHarbinger.com</li>
+            <li style="color: #323c2a;">JordanHarbinger.com</li>
           </a>
 
           <a href="https://courier.unesco.org/en/articles/third-places-true-citizen-spaces">
@@ -75,7 +100,7 @@
           </a>
 
           <a href="https://www.theatlantic.com/family/archive/2022/04/third-places-meet-new-people-pandemic/629468/">
-            <li>Theatlantic.com</li>
+            <li>TheAtlantic.com</li>
           </a>
 
           <a href="https://www.brookings.edu/articles/third-places-as-community-builders/">
@@ -88,109 +113,52 @@
 
       </div>
 
-      <div class=ArticlesCard1>
+      <div class="ArticlesCard1 revealable">
 
-        <h1 id="ArticleHeader" style="color: #a9bda0;"">Lorem ipsum dolor sit amet, consectetur adipiscing elit </h1>
+        <h1 id="ArticleHeader" class=Bord style="color: #a9bda0;"> What's being done? </h1>
 
-    <p id=" ArticleLinks1" style="color: #323c2a;"">
+          <h3 id="ArticleLinks1" style="color: #323c2a;"">
 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        Efforts to revitalize third places are underway in some communities. Grassroots initiatives, such as community gardens, pop-up markets, and neighborhood associations, seek to reclaim public spaces for social interaction. Cities are implementing urban design strategies that prioritize pedestrian-friendly environments and mixed-use developments, fostering opportunities for spontaneous encounters and community gathering. </h3>
+
 
 </div>
 
-    <div class=ArticlesCard1>
+    <div class="ArticlesCard1 revealable">
 
-          <h1 id=" ArticleHeader" style="color: #a9bda0;"">de Finibus Bonorum et Malorum </h1>
+          <h1 id="ArticleHeader" class=Bord style="color: #a9bda0;"> Sustaining third places </h1>
 
-        <p id=" ArticleLinks1" style="color: #323c2a;"">
+        <h3 id="ArticleLinks1" style="color: #323c2a;"">
 
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
+        Building and sustaining third places requires a concerted effort from both community members and stakeholders. First and foremost, fostering a welcoming and inclusive environment is essential, ensuring that all individuals feel valued and respected within the space. Community engagement plays a pivotal role, with local residents actively participating in the planning, design, and management of third places to meet the diverse needs of the community. </h3>
 
     </div>
 </div>
   <div class=COLUMTWO>
-    <div class=DefinitionCard>
+    <div class="DefinitionCard revealable">
       
 
       <h2 id=Question style=" color: #a9bda0;"> What is a "Third Place"? </h2>
 
           <h4 id=DefinitionText style="color: #323c2a;">
-            A third place is a location for people to socialize and exist outside of outside of work and home. Typically
-            these
-            places consist of malls, cafes, and bookstores, but as a cosequence of an anti-youth culture, a global
-            pandemic
-            and late stage capatalism, these places are hard to come by. Nowadays many people spend their day-to-day in
-            an
-            endless cylce of going to work, then home, then back to work which has resulted in what the surgeon general
-            refers
-            to as a pandemic of loniliness. The lack of third places has resulted in a lack of socialization which has
-            real
-            adverse health effects. A third place is a location for people to socialize and exist outside of outside of
-            work and home. Typically
-            these
-            places consist of malls, cafes, and bookstores, but as a cosequence of an anti-youth culture, a global
-            pandemic
-            and late stage capatalism, these places are hard to come by. Nowadays many people spend their day-to-day in
-            an
-            endless cylce of going to work, then home, then back to work which has resulted in what the surgeon general
-            refers
-            to as a pandemic of loniliness. The lack of third places has resulted in a lack of socialization which has
-            real
-            adverse health effects.A third place is a location for people to socialize and exist outside of outside of
-            work and home. Typically
-            these
-            places consist of malls, cafes, and bookstores, but as a cosequence of an anti-youth culture, a global
-            pandemic
-            and late stage capatalism, these places are hard to come by. Nowadays many people spend their day-to-day in
-            an
-            endless cylce of going to work, then home, then back to work which has resulted in what the surgeon general
-            refers
-            to as a pandemic of loniliness. The lack of third places has resulted in a lack of socialization which has
-            real
-            adverse health effects.</h4>
+            A third place is a location for people to socialize and exist outside of work and home. Typically, these places consist of malls, cafes, and bookstores, but as a consequence of an anti-youth culture, a global pandemic, and late-stage capitalism, these places are hard to come by. Nowadays, many people spend their day-to-day in an endless cycle of going to work, then home, then back to work, which has resulted in what the Surgeon General refers to as a pandemic of loneliness. The lack of third places has resulted in a lack of socialization, which has real adverse health effects.To make up for this loss, many people .
+          
+          A third place is crucial for fostering social connections and a sense of belonging, yet their scarcity has profound implications for individual well-being and community cohesion. As society becomes increasingly fragmented and individuals spend more time in isolated routines, the absence of third places exacerbates feelings of loneliness and isolation. This isolation can have tangible health consequences, contributing to elevated stress levels, depression, and a weakened immune system. Moreover, the erosion of third places diminishes opportunities for serendipitous encounters, spontaneous interactions, and the sharing of diverse perspectives—all essential elements of a thriving community. It's imperative that we recognize the importance of third places and work collectively to create and sustain these vital social hubs, ensuring that everyone has access to spaces where they can connect, engage, and thrive outside the confines of work and home.</h4>
       </div>
-      <div class=DefinitionCard>
+      <div id=ABOUT class="DefinitionCard revealable">
 
 
-        <h2 id=Question style="color: #a9bda0;"> What is a "Third Place"? </h2>
+        <h2 id=Question style="color: #a9bda0;"> The Decline Of Third Places. </h2>
 
         <h4 id=DefinitionText style="color: #323c2a;">
-          A third place is a location for people to socialize and exist outside of outside of work and home. Typically
-          these
-          places consist of malls, cafes, and bookstores, but as a cosequence of an anti-youth culture, a global
-          pandemic
-          and late stage capatalism, these places are hard to come by. Nowadays many people spend their day-to-day in an
-          endless cylce of going to work, then home, then back to work which has resulted in what the surgeon general
-          refers
-          to as a pandemic of loniliness. The lack of third places has resulted in a lack of socialization which has
-          real
-          adverse health effects. A third place is a location for people to socialize and exist outside of outside of
-          work and home. Typically
-          these
-          places consist of malls, cafes, and bookstores, but as a cosequence of an anti-youth culture, a global
-          pandemic
-          and late stage capatalism, these places are hard to come by. Nowadays many people spend their day-to-day in an
-          endless cylce of going to work, then home, then back to work which has resulted in what the surgeon general
-          refers
-          to as a pandemic of loniliness. The lack of third places has resulted in a lack of socialization which has
-          real
-          adverse health effects.A third place is a location for people to socialize and exist outside of outside of
-          work and home. Typically
-          these
-          places consist of malls, cafes, and bookstores, but as a cosequence of an anti-youth culture, a global
-          pandemic
-          and late stage capatalism, these places are hard to come by. Nowadays many people spend their day-to-day in an
-          endless cylce of going to work, then home, then back to work which has resulted in what the surgeon general
-          refers
-          to as a pandemic of loniliness. The lack of third places has resulted in a lack of socialization which has
-          real
-          adverse health effects.</h4>
+        The decline of third places across America is a multifaceted phenomenon driven by urbanization, technological advancements, and shifting societal norms. As cities expand and suburban sprawl encroaches, commercial developments often prioritize profit over communal spaces, diminishing the availability of venues for social interaction. Simultaneously, the rise of digital technologies fosters virtual connections at the expense of face-to-face encounters, further eroding the appeal of physical gathering spots. Economic pressures exacerbate the situation, making it challenging for small businesses to establish and maintain third places amidst rising rents and property values. These trends collectively contribute to a landscape where third places are increasingly scarce, depriving communities of vital forums for civic engagement, cultural exchange, and the formation of social bonds.Moreover, societal shifts have altered the very fabric of socialization. With the acceleration of modern life, individuals find themselves caught in a whirlwind of work commitments and personal responsibilities, leaving little time for leisurely engagement in communal spaces. This frenetic pace of life, coupled with longer commutes and increased work hours, diminishes the appeal of leisurely gatherings. Additionally, social atomization, characterized by weakened social ties and fragmented communities, undermines the sense of belonging that third places traditionally fostered. As a result, the decline of third places represents not only a loss of physical spaces but also a diminishing of the social fabric that once bound communities together.</h4>
       </div>
 
     </div>
 
-    <div class=COLOMTHREE>
-      <div class=VideoCard>
+    <div class=COLOMTHREE >
+      <!-- VIDEO ONE -->
+      <div class="VideoCard revealable">
         <h3 id=VideoTitle style="color: #a9bda0;">
           Mina Le on Third Places
         </h3>
@@ -203,54 +171,57 @@
 
         </iframe>
       </div>
-      <div class=VideoCard>
+      <!-- VIDEO TWO -->
+      <div class="VideoCard revealable">
         <h3 id=VideoTitle style="color: #a9bda0;">
-          Mina Le on Third Places
+          Surgeon General on Loniliness
         </h3>
-        <iframe id=Video1 width="360" height="
-        215" src="https://www.youtube.com/embed/KqjpuUJQFcM?si=UwM6PcJLPg5wWnGm" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen> </iframe>
-
-        </iframe>
+        <iframe id=Video1 width="360" height="215" src="https://www.youtube.com/embed/afGeP92kS48?si=l_KRVokXPvQeLynC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <!-- VIDEO THREE -->
+      <div class="VideoCard revealable">
+        <h3 id=VideoTitle style="color: #a9bda0;">
+          What Our Cities Are Missing
+        </h3>
+        <iframe id=Video1 width="360" height="215" src="https://www.youtube.com/embed/MD_CMrCpBMc?si=xaQEdnXqSU55PygS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </div>
   </div>
+</div>
 
-  <!--
+  <!-- -->
 
-  <div class=ThreePlaces>
+  <div class="ThreePlaces revealable" >
     <p>
-    <h1 class=Places id=ABOUT> First Place</h1>
-    <img src="homepixel.png" width="500" height="300" class=HomePic>
+    <h1 class="Places fp" > First Place</h1>
+    <img class= fp src="homepixel.png" width="500" height="300" class=HomePic>
     </p>
 
     <p>
-    <h1 class=Places> Second Place</h1>
-    <img src=workpixel.png width="700" height="300" class=Work>
+    <h1 class="Places sp"> Second Place</h1>
+    <img class= sp src=workpixel.png width="700" height="300" class=Work>
     </p>
 
     <p>
-    <h1 class=Places> Third Place</h1>
-    <img src="coffeepix.png" width="200" height="300" class=Third>
+    <h1 class="Places tp" > Third Place</h1>
+    <img class= tp src="coffeepix.png" width="200" height="300" class=Third>
     </p>
 
   </div>
 
-  <div class=PlaceDef>
+  <!-- <div class=PlaceDef>
     <h3>The First Place refers to ones home </h3>
     <h3> The Second Place refers to ones work </h3>
     <h3> The Third Place refers to a place where people can socialize outside the home and work. </h3>
-  </div>
+  </div> -->
     
--->
-  <div class=Buttons>
+<!-- -->
+  <!-- <div class=Buttons>
     <button type="button" id=DISCOVER>
       Find a Third Place in your Area!</button>
     <button type="button">
       Submit a Third Place in your Area!</button>
-  </div>
+  </div> -->
 
 </body>
 

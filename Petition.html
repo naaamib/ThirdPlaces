@@ -17,42 +17,32 @@
 </head>
 <!---->
 
-<body>
-  <div class=navBar>
-    <div id=headerLeft>
-      <div id=logo id=coffeeHead>
-        <p> <a href="index.html" style="text-decoration:none;"> <img src=coffeepix.png width="100" height="80">
-        </p>
-        <p style="color: #FFBE98;"> <a href="index.html" style="text-decoration:none;"> Place3 </p>
+  <body>
+    <div class=navBar>
+      <div class=navbaritems>
+      <div id=headerLeft>
+        <div id=logo id=coffeeHead>
+          <p> <a href="index.html" style="text-decoration:none;"> <img src=coffeepix.png width="100" height="80">
+          </p>
+          <p style="color: #FFBE98;"> <a href="index.html" style="text-decoration:none;"> Place3 </p>
+        </div>
+        <div class=headerLink>
+          <p> <a href="index.html" style="text-decoration:none;"> HOME </a> </p>
+          <p> <a href="#ABOUT" style="text-decoration:none;"> ABOUT </a> </p>
+          <p> <a href="#DISCOVER" style="text-decoration:none;"> DISCOVER </a> </p>
+          <p> <a href="Petition.html" style="text-decoration:none;"> SIGN OUR PETITION </a> </p>
+          <button id=reduceMotion> Reduce Motion  </button>
+          <img src=moon.png id=icon>
+        </div>
       </div>
-      <div class=headerLink>
-        <p> <a href="index.html" style="text-decoration:none;"> HOME </a> </p>
-        <p> <a href="#ABOUT" style="text-decoration:none;"> ABOUT </a> </p>
-        <p> <a href="#DISCOVER" style="text-decoration:none;"> DISCOVER </a> </p>
-        <p> <a href="Petition.html" style="text-decoration:none;"> SIGN OUR PETITION </a> </p>
+      <div id=headerRight>
+        <img src=moon.png id=icon>
       </div>
+      </div>   
     </div>
-    <div id=headerRight>
-      <img src=moon.png id=icon>
-    </div>
-  </div>
-</body>
+  </body>
 
-<script>
-  var dark = document.getElementById("dark");
 
-  dark.onclick = function () {
-    document.body.classList.toggle("dark-theme");
-
-    if (documnet.body.classList.contains("dark-theme")) {
-      icon.src = "sun.jpg";
-
-    } else {
-      icon.src = "moon.png";
-
-    }
-  }
-</script>
 
 
 <!--000000000000000000PETITION DOWN HERE00000000000000000000000000000-->
@@ -67,10 +57,7 @@
     <div class="petition-container">
       
       <div class="petition-para">
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
-        enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-        qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+        Join us in advocating for the revitalization and preservation of third places by signing our petition today. Third places are the lifeblood of vibrant communities, providing essential spaces for social interaction, cultural exchange, and civic engagement. By signing this petition, you're standing up for the creation and maintenance of welcoming and inclusive spaces where individuals from all walks of life can come together, connect, and thrive. Your signature sends a powerful message to policymakers, urban planners, and community leaders that investing in third places is crucial for building healthier, more resilient communities. Together, we can ensure that everyone has access to the vital social hubs they need to combat loneliness, strengthen social bonds, and foster a sense of belonging. Sign the petition now and be a part of the movement to reclaim our public spaces for the benefit of all.
         
       </div>
 
@@ -78,6 +65,7 @@
         <p>🖊️ Pam from Bartow  supports this.</p>
         <p>🖊️ Sam from Forsyth  supports this.</p>
         <p>🖊️ Kam from Cobb  supports this.</p>
+        <p id=counter>🖊️ 3 people have signed this petition and support this cause.</p>
       </div>
         
       </div>
@@ -99,12 +87,31 @@
       </p>
       <input type="text" id="email" placeholder="Enter Your Email">
       
-      <button id=sign-now-button> Sign Now </button>
+     
     </form>
-      
+       <button id=sign-now-button> Sign Now </button>
       <!--- Sign Now Button --->
  
   
+  </div>
+
+  <!-- Modal -->
+  <div id="thanks-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container"> 
+        <p id="thanks-modal-content"> place holder text
+        </p>
+        <!-- text here -->
+        <button id="modalButton">
+          Close
+        </button>
+      </div>
+      <!-- image here-->
+      <img id= "thanks-modal-image" src= nob.jpg> 
+    </div>
+
   </div>
   
 </body>
